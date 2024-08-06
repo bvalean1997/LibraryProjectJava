@@ -1,17 +1,24 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.ArrayList;
+import java.util.List;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+public class Main {
+    public static void LibraryDemo(String[] args) {
+        Book historyBook = new Book("0-061-96436", "Sapiens", "Yuval Noah Harari" );
+        Book myFavoriteNovel = new Book("0-061-962136", "Anna Karenina", "Leo Tolstoy" );
+
+        Magazine myFashionMagazine = new Magazine(7242, "Vogue","Anna Wintour");
+        Magazine myGeographyMagazine = new Magazine(1124, "National Geographic","Gilbert Hovey");
+
+        // not finished yet
+        List<String> list = new ArrayList<String>();
+        list.add(String.valueOf(historyBook));
+        list.add(String.valueOf(myFavoriteNovel));
+        list.add(String.valueOf(myFashionMagazine));
+        list.add(String.valueOf(myGeographyMagazine));
+
+
     }
+
 }
